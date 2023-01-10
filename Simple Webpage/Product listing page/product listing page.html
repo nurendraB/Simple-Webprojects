@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>product listing page</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+      li {
+        list-style: none;
+      }
+      .product_page {
+        margin: 2% 20%;
+        display: flex;
+        box-sizing: border-box;
+      }
+      .product_title {
+        text-align: center;
+        font-size: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .product_page .product_image {
+
+        margin-right: 20px;
+           }
+      .product_image .product_img_border{
+        border: 1.7px solid rgb(217, 217, 217);
+        padding: 60px 30px
+         
+      }
+      .p_flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .bd{
+        margin-top: 20px;
+      }
+
+     .buy_now{
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: rgb(30, 112, 255);
+        color: white;
+        font-size: 15px;
+    }
+
+    .bold{
+        font-weight: 500;
+    }
+
+    .right{
+        text-align: right;
+    }
+
+    .add_cart_btn{
+        padding: 10px 20px;
+           border: 1.7px solid rgb(217, 217, 217);
+        border-radius: 5px;
+        color: black;
+        font-weight: 600 !important;
+        font-size: 15px;
+    }
+      </style>
+  </head>
+  <body>
+    <h4 class="product_title">BUYMe<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
+      <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+      <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+    </svg></h4>
+    
+    <div class="product_page">
+      
+      <div class="product_image">
+          <div class="product_img_border p_flex">
+            <img src="White shirt1.png" alt="product IMG" />
+         </div>
+    </div>
+        <div class="product_info p_flex">
+          <span  class="bold">White Formal Shirt</span>
+          <span style="color:grey;">Shirts</span>
+          <li>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star-half-empty"></span>
+          </li>
+          <li>
+            <span class="bold">Rs. 480</span>
+            <s style="font-size: 14px"> Rs. 1200</s>
+            <span  class="bold" style="color: rgb(0, 187, 103)">
+              40% Off</span
+            >
+          </li>
+          <p>
+            An XYZ brand, Symbol is built on the pillars of quality, reliability and affordability, offering a range of lifestyle essentials that help you look good every day. This classic formal shirt is crafted with precision in cotton blend, two tone Fil a Fil fabric, to offer enhanced comfort and style, all at a great value. This shirt comes in a range of colors to choose for any formal or semi formal ocassion. To complete the look, pair it with an elegant solid formal trouser and brown leather shoes for a lasting impression. Now, look good every day with Symbol fashion essentials.
+          </p>
+          <div>
+            <span  class="bold space">Color</span> <span  class="right" >White</span>
+            <br />
+            <span  class="bold space">Availability</span> <span  class="right" >3 in stock</span>
+          </div>
+          <li>
+            <span  class="bold space">Select Size</span>
+            <input  class="right"  type="radio" name="size" value="S" />S
+            <input type="radio" name="size" value="M" checked />M
+            <input type="radio" name="size" value="L" />L
+          </li>
+          <li>
+            <span  class="bold space">Quantity</span>
+            <select class="right" width="20px">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option selected>4</option>
+              <option>5</option>
+            </select>
+          </li>
+          <li class="bd">
+            <span class="buy_now space bold">Buy Now</span>
+            <button  class="bold right add_cart_btn" href="">Add to Cart</button>
+          </li>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
